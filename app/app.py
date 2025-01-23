@@ -42,7 +42,7 @@ def main():
     st.header(f"AWS {cert_type}")
 
     # Load questions
-    questions = load_questions(f"{cert_code}.json")
+    questions = load_questions(f"questions/{cert_code}.json")
 
     if questions is None:
         st.warning(f"No questions yet available for {cert_type}.")
